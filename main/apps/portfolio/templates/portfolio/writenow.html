@@ -8,9 +8,7 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'portfolio/css/materialize.css' %}" media="screen,projection">
-  <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
-  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" media="screen,projection">
-  <!-- <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+<link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" media="screen,projection">
 </head>
 <body>
   <div class="navbar-fixed">
@@ -19,10 +17,10 @@
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
-        <li><a href="#mission">My Mission</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/#mission">My Mission</a></li>
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/#about">About Me</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -32,3 +30,59 @@
     </div>
   </nav>
 </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">Write Now</h1>
+        <h5 class="center">A gamified social media for writers to post articles and comments</h5>
+      <div class="row center">
+      </div>
+        <div class="row center">
+      </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'portfolio/images/writeb.png' %}" alt="header" style="display: block;: transform: translate3d(-50%, 141px, 0-x);"></div>
+  </div>
+
+    <div class="section center">
+      <div class="row">
+         <!-- <div class="col s12">This div is 12-columns wide</div> -->
+         <div class="col s6">
+          <h2>Role</h2>
+          <h5>Design forms for creating: users, comments, and post. Queried data to display into the front-end.</h5>
+         </div>
+         <div class="col s6">
+          <h2>Tech</h2>
+          <h5>Ruby|Rails|SQLite|HTML|CSS</h5>
+         </div>
+       </div>
+      <div class="row">
+        <div class="col s3">
+            <img class="responsive-img materialboxed" src="{% static 'portfolio/images/writeb.png' %}">
+        </div>
+        <div class="col s3">
+            <img class="responsive-img materialboxed" src="{% static 'portfolio/images/sport.png' %}">
+        </div>
+        <div class="col s3">
+             <img class="responsive-img materialboxed" src="{% static 'portfolio/images/jakehome.png' %}">
+        </div>
+        <div class="col s3">
+             <img class="responsive-img materialboxed" src="{% static 'portfolio/images/ssofcode.png' %}">
+        </div>
+
+        </div>
+
+
+
+
+  <!--Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{% static 'portfolio/js/materialize.js' %}"></script>
+  <script type="text/javascript" src="{% static 'portfolio/js/init.js' %}"></script>
+
+  </body>
+</html>
