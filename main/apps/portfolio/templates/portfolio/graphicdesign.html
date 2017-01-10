@@ -8,9 +8,7 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'portfolio/css/materialize.css' %}" media="screen,projection">
-  <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
-  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" media="screen,projection">
-  <!-- <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+<link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" media="screen,projection">
 </head>
 <body>
   <div class="navbar-fixed">
@@ -19,14 +17,18 @@
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
-        <li><a href="#mission">My Mission</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/#about">About Me</a></li>
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/#mission">My Mission</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About Me</a></li>
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/#mission">My Mission</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -38,14 +40,10 @@
       <div class="container">
         <br><br>
         <h1 class="header center white-text text-lighten-2">Graphic Design</h1>
-        <!-- <h5 class="header center white-text">Developer by day. Gamer by night.</h5> -->
-
+      <div class="row center">
+      </div>
         <div class="row center">
-        <!-- <img class=" circle responsive-img" src="{% static 'portfolio/images/profilepic.jpeg' %}" style="max-width: 30%;">   -->
-        </div>
-        <div class="row center">
-          <!-- <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a> -->
-        </div>
+      </div>
         <br><br>
 
       </div>
@@ -53,19 +51,87 @@
     <div class="parallax"><img src="{% static 'portfolio/images/background_one.jpg' %}" alt="header" style="display: block;: transform: translate3d(-50%, 141px, 0-x);"></div>
   </div>
 
+  <div class="divider"></div>
+    <div class="section center">
+      <div class="row">
+        <h5>Santa Clarita Performing Arts Center</h5>
+        <p>Redisgn a logo and create a new pamphelt for the upcoming season</p>
+        <div class="col s4">
+          <img class="responsive-img materialboxed" src="{% static 'portfolio/images/screen1.png' %}">
+        </div>
+        <div class="col s4">
+          <img class="responsive-img materialboxed" src="{% static 'portfolio/images/cover.png' %}" >
+          </div>
+          <div class="col s4">
+            <img class="responsive-img materialboxed" src="{% static 'portfolio/images/brochure1.png' %}">
+          </div>
+          <div class="col s4">
+            <img class="responsive-img materialboxed" src="{% static 'portfolio/images/david.png' %}">
+          </div>
+          <div class="col s4">
+            <img class="responsive-img materialboxed" src="{% static 'portfolio/images/ger1.png' %}">
+          </div>
 
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
     </div>
-  </footer>
+    </div>
+
+    <div class="divider"></div>
+      <div class="section center">
+        <div class="row">
+          <h5>All Music</h5>
+          <p>Create next months issue of All Music</p>
+          <div class="col s4">
+            <img class="responsive-img materialboxed" src="{% static 'portfolio/images/allmusic.png' %}">
+          </div>
+          <div class="col s4">
+            <img class="responsive-img materialboxed" src="{% static 'portfolio/images/allmusic1.png' %}" >
+            </div>
+            <div class="col s4">
+              <img class="responsive-img materialboxed" src="{% static 'portfolio/images/allmusic2.png' %}">
+            </div>
+            <div class="col s4">
+              <img class="responsive-img materialboxed" src="{% static 'portfolio/images/ts.png' %}">
+            </div>
+
+      </div>
+      </div>
+
+      <div class="divider"></div>
+        <div class="section center">
+          <div class="row">
+            <h5>Mac at 30</h5>
+            <p>Design a pamphlet of mac over the last 30 years</p>
+            <div class="col s4">
+              <img class="responsive-img materialboxed" src="{% static 'portfolio/images/macat30.png' %}">
+            </div>
+            <div class="col s4">
+              <img class="responsive-img materialboxed" src="{% static 'portfolio/images/macspread.png' %}" >
+              </div>
+              <div class="col s4">
+                <img class="responsive-img materialboxed" src="{% static 'portfolio/images/timespread.png' %}" >
+                </div>
+              <div class="col s4">
+                <img class="responsive-img materialboxed" src="{% static 'portfolio/images/timeline1.png' %}">
+              </div>
+              <div class="col s4">
+                <img class="responsive-img materialboxed" src="{% static 'portfolio/images/timeline2.png' %}">
+              </div>
+              <!-- <div class="col s4">
+                <img class="responsive-img materialboxed" src="{% static 'portfolio/images/timeline3.png' %}">
+              </div> -->
+
+        </div>
+        </div>
+
+
+
+
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script type="text/javascript" src="{% static 'portfolio/js/materialize.js' %}"></script>
+  <script type="text/javascript" src="{% static 'portfolio/js/init.js' %}"></script>
 
   </body>
 </html>
