@@ -9,3 +9,6 @@ def writenow(request):
 
 def graphic(request):
     return render(request, 'portfolio/graphicdesign.html')
+
+def newjersey(request):
+    return render(request, 'portfolio/newjersey.html')
